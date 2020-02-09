@@ -88,7 +88,7 @@ public class WriteLoops {
 
     public int nestedFors() {
         int w = 0;
-        for (int i = 0; i < 20; i+=2) {
+        for (int i = 0; i < 20; i++) {
             for (int k = 0; k < 4; k++) {
                 w = w + 1;
             }
@@ -167,7 +167,7 @@ public class WriteLoops {
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public int checkGameScore() {
+    public boolean checkGameScore() {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
@@ -183,7 +183,7 @@ public class WriteLoops {
 
             // each time through the inner loop
         
-        return w; // >= 3;
+        return w >= 1;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -199,7 +199,7 @@ public class WriteLoops {
             w = w + 1;
         } while (runningScore < highestScore);
 
-        return w >= 3;
+        return w >= 1;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
